@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_service_features",
+  "info": {
+    "displayName": "Feature",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

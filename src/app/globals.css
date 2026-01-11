@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Dark mode (default) */
+  .dark body {
+    @apply bg-colatech-black text-white antialiased;
+  }
+
+  /* Light mode */
+  .light body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+
+  /* Light mode overrides for specific elements */
+  .light {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f9fafb;
+    --color-text-primary: #111827;
+    --color-text-secondary: #6b7280;
+  }
+
+  .dark {
+    --color-bg-primary: #0B0D10;
+    --color-bg-secondary: #1B1F24;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #9AA4B2;
+  }
+}

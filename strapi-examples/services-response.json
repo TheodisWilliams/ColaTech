@@ -1,0 +1,123 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Websites & Web Apps",
+        "slug": "websites",
+        "icon": "Globe",
+        "shortDescription": "Custom websites and web applications built for your business.",
+        "longDescription": "<h2>Professional Web Development</h2><p>We build modern, responsive websites and web applications that drive your business forward. From simple marketing sites to complex web applications with custom functionality.</p><h3>What We Build</h3><ul><li>Marketing Websites</li><li>E-commerce Platforms</li><li>Web Applications</li><li>Content Management Systems</li></ul>",
+        "features": [
+          {
+            "id": 1,
+            "title": "Mobile-First Design",
+            "description": "Responsive layouts that work perfectly on all devices"
+          },
+          {
+            "id": 2,
+            "title": "SEO Optimized",
+            "description": "Built-in SEO best practices to help you rank on Google"
+          },
+          {
+            "id": 3,
+            "title": "Fast Performance",
+            "description": "Optimized for speed with modern frameworks and CDN"
+          },
+          {
+            "id": 4,
+            "title": "Easy Updates",
+            "description": "Content management systems that you can update yourself"
+          }
+        ],
+        "metaTitle": "Professional Website Development | ColaTech Solutions",
+        "metaDescription": "Custom websites and web applications for Houston businesses. Modern design, fast performance, SEO-optimized.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Wi-Fi & Network Upgrades",
+        "slug": "wifi-network",
+        "icon": "Wifi",
+        "shortDescription": "Enterprise-grade wireless networks with full coverage, VLANs for security, and seamless roaming.",
+        "longDescription": "<h2>Enterprise Wi-Fi for Small Businesses</h2><p>Tired of slow Wi-Fi, dead zones, and devices that won't stay connected? We design and install enterprise-grade wireless networks that deliver fast, reliable coverage throughout your entire space.</p><h3>What You Get</h3><ul><li>Full Coverage: Eliminate dead zones</li><li>Fast Performance: Wi-Fi 6/6E technology</li><li>Seamless Roaming: Move without dropping connection</li><li>Guest Networks: Isolated guest Wi-Fi</li></ul>",
+        "features": [
+          {
+            "id": 5,
+            "title": "Site Survey & Planning",
+            "description": "RF analysis to determine optimal access point placement"
+          },
+          {
+            "id": 6,
+            "title": "Enterprise Access Points",
+            "description": "Business-grade hardware with seamless roaming"
+          },
+          {
+            "id": 7,
+            "title": "VLAN Segmentation",
+            "description": "Separate networks for guests, cameras, and IoT devices"
+          },
+          {
+            "id": 8,
+            "title": "Remote Management",
+            "description": "Monitor and troubleshoot your network from anywhere"
+          }
+        ],
+        "metaTitle": "Enterprise Wi-Fi & Network Upgrades | Houston IT Services",
+        "metaDescription": "Professional Wi-Fi installation with full coverage, seamless roaming, and enterprise security for Houston businesses.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "IP Cameras & NVR",
+        "slug": "cameras",
+        "icon": "Camera",
+        "shortDescription": "PoE security cameras with high-definition recording, remote viewing, motion alerts, and secure storage.",
+        "longDescription": "<h2>Professional Security Camera Systems</h2><p>Protect your business with high-definition IP cameras, secure recording, and remote viewing from anywhere.</p><h3>What's Included</h3><ul><li>PoE IP Cameras: 4K resolution, night vision</li><li>NVR or NAS: Network video recorder with storage</li><li>Remote Access: View from your phone or computer</li><li>Motion Detection: Smart alerts</li></ul>",
+        "features": [
+          {
+            "id": 9,
+            "title": "4K Resolution",
+            "description": "Crystal-clear video with facial recognition quality"
+          },
+          {
+            "id": 10,
+            "title": "Night Vision",
+            "description": "Infrared LEDs for clear footage in complete darkness"
+          },
+          {
+            "id": 11,
+            "title": "Smart Alerts",
+            "description": "Motion-triggered notifications sent to your phone"
+          },
+          {
+            "id": 12,
+            "title": "Secure Remote Access",
+            "description": "View live and recorded footage from anywhere"
+          }
+        ],
+        "metaTitle": "IP Security Cameras & NVR Installation | Houston",
+        "metaDescription": "Professional PoE security camera systems with 4K recording, remote viewing, and motion alerts for Houston businesses.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 3
+    }
+  }
+}

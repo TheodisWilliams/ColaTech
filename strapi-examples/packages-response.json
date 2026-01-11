@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "name": "Digital Presence Starter",
+        "slug": "digital-presence",
+        "priceRange": "Starting at $1,500",
+        "bullets": "Custom 5-page website\nMobile-responsive design\nProfessional business email (5 accounts)\nDomain registration & DNS setup\nSSL certificate & security\nContact form integration\nBasic SEO setup",
+        "isFeatured": true,
+        "order": 1,
+        "metaTitle": "Digital Presence Starter Package",
+        "metaDescription": "Professional website and business email starting at $1,500.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "name": "Smart Office",
+        "slug": "smart-office",
+        "priceRange": "$3,500–$7,000",
+        "bullets": "Enterprise Wi-Fi (2–4 access points)\nManaged PoE network switch\nFirewall with VPN\nProfessional cabling & cable management\nNetwork monitoring & support (3 months)\nGuest network isolation\nVLAN segmentation (cameras, IoT)\nRemote troubleshooting included\nFull network documentation",
+        "isFeatured": true,
+        "order": 2,
+        "metaTitle": "Smart Office Package",
+        "metaDescription": "Complete network upgrade with enterprise Wi-Fi, firewall, and VPN.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "name": "Fully Managed Business",
+        "slug": "fully-managed",
+        "priceRange": "From $499/month",
+        "bullets": "Everything in Smart Office (included in setup)\n24/7 network monitoring\nProactive security updates & patches\nCloud backup management (up to 500GB)\nPriority support (4-hour response time)\nQuarterly on-site visits\nEquipment refresh planning\nVendor management & coordination\nMonthly reports & recommendations\nUnlimited remote support",
+        "isFeatured": true,
+        "order": 3,
+        "metaTitle": "Fully Managed IT Services",
+        "metaDescription": "Comprehensive managed IT services with 24/7 monitoring and priority support.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 3
+    }
+  }
+}

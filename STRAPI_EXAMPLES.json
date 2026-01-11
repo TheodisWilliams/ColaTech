@@ -1,0 +1,436 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Websites & Web Apps",
+        "slug": "websites-web-apps",
+        "icon": "Globe",
+        "shortDescription": "Custom websites and web applications built for your business.",
+        "longDescription": "## Professional Web Development\n\nWe build modern, responsive websites and web applications that drive your business forward. From simple marketing sites to complex web applications with custom functionality.\n\n### What We Build\n\n- **Marketing Websites**: Fast, SEO-optimized sites that convert visitors into customers\n- **E-commerce**: Online stores with secure checkout, inventory management, and shipping integration\n- **Web Applications**: Custom dashboards, booking systems, client portals, and business tools\n- **Content Management**: Easy-to-update websites built on modern CMS platforms\n\n### Our Process\n\n1. **Discovery**: We learn about your business, goals, and target audience\n2. **Design**: Modern, mobile-first designs that reflect your brand\n3. **Development**: Clean code, fast performance, accessibility best practices\n4. **Launch**: Domain setup, hosting, SSL, and training\n5. **Support**: Ongoing maintenance, updates, and technical support\n\n### Technology Stack\n\n- Next.js, React, TypeScript for modern web apps\n- Tailwind CSS for responsive design\n- Strapi or WordPress for content management\n- Cloudflare for performance and security\n\n### Included Services\n\n- Domain registration and DNS management\n- Professional business email setup\n- SSL certificate and security hardening\n- Google Analytics and SEO configuration\n- Mobile-responsive design\n- Contact forms and integrations",
+        "isFeatured": true,
+        "features": [
+          {
+            "id": 1,
+            "title": "Mobile-First Design",
+            "description": "Responsive layouts that work perfectly on all devices",
+            "icon": "Smartphone"
+          },
+          {
+            "id": 2,
+            "title": "SEO Optimized",
+            "description": "Built-in SEO best practices to help you rank on Google",
+            "icon": "TrendingUp"
+          },
+          {
+            "id": 3,
+            "title": "Fast Performance",
+            "description": "Optimized for speed with modern frameworks and CDN",
+            "icon": "Zap"
+          },
+          {
+            "id": 4,
+            "title": "Easy Updates",
+            "description": "Content management systems that you can update yourself",
+            "icon": "Edit"
+          }
+        ],
+        "metaTitle": "Professional Website Development | ColaTech Solutions",
+        "metaDescription": "Custom websites and web applications for Houston businesses. Modern design, fast performance, SEO-optimized.",
+        "keywords": "website development, web design Houston, custom web applications, e-commerce",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Wi-Fi & Network Upgrades",
+        "slug": "wifi-network-upgrades",
+        "icon": "Wifi",
+        "shortDescription": "Enterprise-grade wireless networks with full coverage, VLANs for security, and seamless roaming. No more dead zones.",
+        "longDescription": "## Enterprise Wi-Fi for Small Businesses\n\nTired of slow Wi-Fi, dead zones, and devices that won't stay connected? We design and install enterprise-grade wireless networks that deliver fast, reliable coverage throughout your entire space.\n\n### What You Get\n\n- **Full Coverage**: Eliminate dead zones with professional access point placement\n- **Fast Performance**: Wi-Fi 6/6E technology with gigabit speeds\n- **Seamless Roaming**: Move throughout your space without dropping connection\n- **Guest Networks**: Isolated guest Wi-Fi that keeps your business network secure\n- **VLANs**: Network segmentation for security cameras, IoT devices, and departments\n- **Centralized Management**: Monitor and manage your entire network from one dashboard\n\n### Typical Installation Includes\n\n- Site survey and RF planning\n- 2-6 enterprise access points (Ubiquiti UniFi or TP-Link Omada)\n- Managed PoE switch (powers access points over ethernet)\n- Network firewall with VPN for remote access\n- Professional cable runs and mounting\n- Configuration, testing, and documentation\n- 90 days of support and monitoring\n\n### Perfect For\n\n- Offices with 5-50 employees\n- Multi-story buildings\n- Warehouses and retail spaces\n- Medical and dental offices\n- Co-working spaces\n- Restaurants and hospitality\n\n### Why Enterprise Equipment?\n\nConsumer routers can't handle the demands of a business environment. Enterprise access points are designed for:\n\n- More concurrent users\n- Better range and coverage\n- Advanced security features\n- Centralized management\n- Long-term reliability\n\n### Pricing\n\nMost small business network upgrades range from $3,500 to $7,000 depending on space size and requirements.",
+        "isFeatured": true,
+        "features": [
+          {
+            "id": 5,
+            "title": "Site Survey & Planning",
+            "description": "RF analysis to determine optimal access point placement",
+            "icon": "Map"
+          },
+          {
+            "id": 6,
+            "title": "Enterprise Access Points",
+            "description": "Business-grade hardware with seamless roaming",
+            "icon": "Wifi"
+          },
+          {
+            "id": 7,
+            "title": "VLAN Segmentation",
+            "description": "Separate networks for guests, cameras, and IoT devices",
+            "icon": "Shield"
+          },
+          {
+            "id": 8,
+            "title": "Remote Management",
+            "description": "Monitor and troubleshoot your network from anywhere",
+            "icon": "Settings"
+          }
+        ],
+        "metaTitle": "Enterprise Wi-Fi & Network Upgrades | Houston IT Services",
+        "metaDescription": "Professional Wi-Fi installation with full coverage, seamless roaming, and enterprise security for Houston businesses.",
+        "keywords": "enterprise Wi-Fi, network upgrade Houston, business networking, UniFi installation",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "IP Cameras & NVR",
+        "slug": "ip-cameras-nvr",
+        "icon": "Camera",
+        "shortDescription": "PoE security cameras with high-definition recording, remote viewing, motion alerts, and secure storage.",
+        "longDescription": "## Professional Security Camera Systems\n\nProtect your business with high-definition IP cameras, secure recording, and remote viewing from anywhere.\n\n### What's Included\n\n- **PoE IP Cameras**: 4K resolution, night vision, weatherproof (indoor/outdoor)\n- **NVR or NAS**: Network video recorder with 1-4TB storage (expandable)\n- **Remote Access**: View live and recorded footage from your phone or computer\n- **Motion Detection**: Smart alerts when motion is detected in specific zones\n- **Secure Storage**: Encrypted local storage or optional cloud backup\n- **Professional Installation**: Clean cable runs, secure mounting, configuration\n\n### Camera Options\n\n- **Dome Cameras**: Discreet, vandal-resistant, 360° coverage\n- **Bullet Cameras**: Long-range, weatherproof, ideal for perimeters\n- **Turret Cameras**: Wide-angle, indoor/outdoor, easy to aim\n- **PTZ Cameras**: Pan, tilt, zoom with remote control\n\n### Typical Systems\n\n- **4-Camera System**: $2,500–$3,500 (small retail, office entry points)\n- **8-Camera System**: $4,000–$6,000 (retail store, warehouse)\n- **12+ Camera System**: $7,000+ (large retail, multi-building)\n\n### Recording Options\n\n- **Continuous**: Record 24/7 (storage capacity determines retention)\n- **Motion-Triggered**: Record only when motion is detected (longer retention)\n- **Scheduled**: Record during business hours only\n\n### Why PoE Cameras?\n\nPower over Ethernet (PoE) means each camera gets power and data through a single cable:\n\n- Cleaner installation (no separate power adapters)\n- More reliable (enterprise switches with battery backup)\n- Easier troubleshooting\n- Scalable (add cameras as you grow)\n\n### Remote Viewing\n\nAccess your cameras from:\n\n- Mobile app (iOS/Android)\n- Web browser (any device)\n- Desktop software (Windows/Mac)\n\nAll access is encrypted and protected with strong authentication.",
+        "isFeatured": true,
+        "features": [
+          {
+            "id": 9,
+            "title": "4K Resolution",
+            "description": "Crystal-clear video with facial recognition quality",
+            "icon": "Video"
+          },
+          {
+            "id": 10,
+            "title": "Night Vision",
+            "description": "Infrared LEDs for clear footage in complete darkness",
+            "icon": "Moon"
+          },
+          {
+            "id": 11,
+            "title": "Smart Alerts",
+            "description": "Motion-triggered notifications sent to your phone",
+            "icon": "Bell"
+          },
+          {
+            "id": 12,
+            "title": "Secure Remote Access",
+            "description": "View live and recorded footage from anywhere",
+            "icon": "Lock"
+          }
+        ],
+        "metaTitle": "IP Security Cameras & NVR Installation | Houston",
+        "metaDescription": "Professional PoE security camera systems with 4K recording, remote viewing, and motion alerts for Houston businesses.",
+        "keywords": "IP cameras Houston, security cameras, PoE cameras, NVR installation, surveillance",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "attributes": {
+        "name": "Digital Presence Starter",
+        "slug": "digital-presence-starter",
+        "oneLiner": "Get online with a professional website and business email.",
+        "priceRange": "Starting at $1,500",
+        "description": "Perfect for new businesses or those looking to refresh their online presence. Includes everything you need to establish a professional digital footprint.",
+        "features": "Custom 5-page website\nMobile-responsive design\nProfessional business email (5 accounts)\nDomain registration & DNS setup\nSSL certificate & security\nContact form integration\nBasic SEO setup",
+        "isFeatured": false,
+        "badge": null,
+        "category": "one-time",
+        "order": 1,
+        "ctaLabel": "Get Started",
+        "ctaHref": "/contact",
+        "metaTitle": "Digital Presence Starter Package | ColaTech Solutions",
+        "metaDescription": "Professional website and business email starting at $1,500. Perfect for small businesses and startups.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "name": "Home Office Network Upgrade",
+        "slug": "home-office-network-upgrade",
+        "oneLiner": "Professional home office setup with enterprise Wi-Fi and secure access.",
+        "priceRange": "$2,000–$3,500",
+        "description": "Transform your home office with enterprise networking equipment. Perfect for remote workers, consultants, and small home-based businesses.",
+        "features": "Enterprise Wi-Fi access point\nManaged network switch\nVPN for secure remote work\nProfessional cabling & mounting\nGuest network isolation\nNetwork diagram & documentation\n30 days of support",
+        "isFeatured": false,
+        "badge": null,
+        "category": "one-time",
+        "order": 2,
+        "ctaLabel": "Request a Quote",
+        "ctaHref": "/contact",
+        "metaTitle": "Home Office Network Upgrade | Houston IT Services",
+        "metaDescription": "Professional home office networking with enterprise Wi-Fi, VPN, and secure setup. $2,000–$3,500.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "name": "Smart Office",
+        "slug": "smart-office",
+        "oneLiner": "Upgrade your network, security, and connectivity.",
+        "priceRange": "$3,500–$7,000",
+        "description": "Our most popular package for small businesses. Complete network infrastructure with enterprise Wi-Fi, security, and professional installation.",
+        "features": "Enterprise Wi-Fi (2–4 access points)\nManaged PoE network switch\nFirewall with VPN\nProfessional cabling & cable management\nNetwork monitoring & support (3 months)\nGuest network isolation\nVLAN segmentation (cameras, IoT)\nRemote troubleshooting included\nFull network documentation",
+        "isFeatured": true,
+        "badge": "Popular",
+        "category": "one-time",
+        "order": 3,
+        "ctaLabel": "Request a Quote",
+        "ctaHref": "/contact",
+        "metaTitle": "Smart Office Package | Small Business IT Infrastructure",
+        "metaDescription": "Complete network upgrade with enterprise Wi-Fi, firewall, and VPN. Our most popular package for Houston small businesses.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "name": "Smart Security & Camera System",
+        "slug": "smart-security-camera-system",
+        "oneLiner": "Professional security cameras with recording and remote access.",
+        "priceRange": "$2,500–$7,000",
+        "description": "High-definition security cameras with local recording and secure remote viewing. Scalable from 4 to 12+ cameras.",
+        "features": "4–12 PoE IP cameras (4K resolution)\nNetwork video recorder (NVR) with 1–4TB storage\nMobile app & web access\nMotion detection & smart alerts\nNight vision (up to 100ft)\nProfessional cable runs & mounting\nSecure remote access configuration\n1 year of support",
+        "isFeatured": false,
+        "badge": null,
+        "category": "one-time",
+        "order": 4,
+        "ctaLabel": "Get a Quote",
+        "ctaHref": "/contact",
+        "metaTitle": "Security Camera System Package | Houston IP Cameras",
+        "metaDescription": "Professional IP camera installation with 4K recording, motion alerts, and remote viewing. $2,500–$7,000.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "name": "Fully Managed Business",
+        "slug": "fully-managed-business",
+        "oneLiner": "Comprehensive IT infrastructure with ongoing management.",
+        "priceRange": "From $499/month",
+        "description": "Complete IT peace of mind. We handle your entire digital infrastructure with proactive monitoring, regular maintenance, and priority support.",
+        "features": "Everything in Smart Office (included in setup)\n24/7 network monitoring\nProactive security updates & patches\nCloud backup management (up to 500GB)\nPriority support (4-hour response time)\nQuarterly on-site visits\nEquipment refresh planning\nVendor management & coordination\nMonthly reports & recommendations\nUnlimited remote support",
+        "isFeatured": false,
+        "badge": null,
+        "category": "subscription",
+        "order": 5,
+        "ctaLabel": "Schedule a Consult",
+        "ctaHref": "/contact",
+        "metaTitle": "Fully Managed IT Services | Houston Managed Support",
+        "metaDescription": "Comprehensive managed IT services with 24/7 monitoring, priority support, and proactive maintenance. From $499/month.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Law Office Wi-Fi Upgrade",
+        "slug": "law-office-wifi-upgrade",
+        "industry": "Small Business",
+        "client": "Mitchell & Associates",
+        "problem": "Spotty Wi-Fi in conference rooms and dead zones throughout the office. Client meetings frequently interrupted by connectivity issues.",
+        "solution": "Installed 4 Ubiquiti UniFi access points with seamless roaming and VLAN segmentation for guest Wi-Fi. Replaced aging network switch with managed PoE switch. Configured VPN for secure remote access.",
+        "result": "Dead zones eliminated",
+        "dateCompleted": "2024-11-15",
+        "featured": true,
+        "metaTitle": "Case Study: Law Office Wi-Fi Upgrade | ColaTech Solutions",
+        "metaDescription": "How we eliminated Wi-Fi dead zones for a Houston law firm with enterprise networking.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Retail Security System",
+        "slug": "retail-security-system",
+        "industry": "Retail",
+        "client": "Chen's Hardware",
+        "problem": "Outdated analog camera system with poor image quality. No remote viewing capability. Tape-based recording system failing.",
+        "solution": "Deployed 12 PoE IP cameras (mix of dome and bullet) with 4K recording to Synology NAS. Configured motion detection zones, mobile app access, and automated backups to cloud storage.",
+        "result": "12 cameras, 24/7 remote access",
+        "dateCompleted": "2024-10-22",
+        "featured": true,
+        "metaTitle": "Case Study: Retail Security Camera Installation | Houston",
+        "metaDescription": "Professional IP camera system installation for a Houston retail store with remote viewing and 4K recording.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "Restaurant Website + Booking",
+        "slug": "restaurant-website-booking",
+        "industry": "Hospitality",
+        "client": "La Cocina Restaurant",
+        "problem": "Relying on third-party reservation platforms with high commission fees (15-20%). Outdated website with poor mobile experience.",
+        "solution": "Built custom Next.js website with integrated online reservation system. Implemented OpenTable API for direct bookings. Added online ordering for takeout. Optimized for local SEO.",
+        "result": "3x online reservations",
+        "dateCompleted": "2024-12-08",
+        "featured": true,
+        "metaTitle": "Case Study: Restaurant Website with Online Booking",
+        "metaDescription": "Custom restaurant website with integrated reservation system that tripled online bookings.",
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "attributes": {
+        "name": "Sarah Mitchell",
+        "company": "Mitchell & Associates Law Firm",
+        "position": "Managing Partner",
+        "quote": "ColaTech transformed our office network. We went from constant Wi-Fi dropouts to seamless connectivity across the entire building. Client meetings are now uninterrupted, and our team can work from anywhere in the office.",
+        "rating": 5,
+        "featured": true,
+        "order": 1,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "name": "David Chen",
+        "company": "Chen's Hardware",
+        "position": "Owner",
+        "quote": "Professional, knowledgeable, and responsive. They designed a camera system that gives us complete visibility and peace of mind. Being able to check on the store from my phone is a game-changer.",
+        "rating": 5,
+        "featured": true,
+        "order": 2,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "name": "Maria Rodriguez",
+        "company": "La Cocina Restaurant",
+        "position": "Owner",
+        "quote": "Our new website looks incredible and we're finally ranking on Google. The online reservation system has tripled our bookings. Worth every penny.",
+        "rating": 5,
+        "featured": true,
+        "order": 3,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "attributes": {
+        "question": "What types of businesses do you work with?",
+        "answer": "We specialize in small businesses (5–50 employees) and home offices. This includes professional services (law, accounting, consulting), retail, healthcare, hospitality, and creative studios.",
+        "category": "general",
+        "order": 1,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "question": "How much does a typical network upgrade cost?",
+        "answer": "Most small business network upgrades range from $3,500 to $7,000 depending on the size of your space, number of users, and specific requirements (cameras, VLANs, VPN, etc.). We provide a detailed quote before any work begins.",
+        "category": "pricing",
+        "order": 1,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "question": "Can you upgrade my existing network or do I need to start from scratch?",
+        "answer": "In most cases, we can upgrade your existing infrastructure. We'll assess what you have, identify bottlenecks, and integrate new equipment seamlessly. Sometimes we recommend replacing aging equipment for reliability, but we'll always explain why and provide options.",
+        "category": "services",
+        "order": 1,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "question": "What brands of equipment do you install?",
+        "answer": "We primarily use Ubiquiti UniFi and TP-Link Omada for networking, Synology for storage/backups, and a variety of PoE IP cameras depending on your needs. We choose equipment based on reliability, performance, and long-term support.",
+        "category": "technical",
+        "order": 1,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "question": "How quickly can you respond to issues?",
+        "answer": "For managed service clients, we guarantee a 4-hour response time during business hours (Mon–Fri 9am–6pm CT). Non-managed clients are supported on a best-effort basis, typically within 1–2 business days.",
+        "category": "support",
+        "order": 1,
+        "createdAt": "2025-01-10T10:00:00.000Z",
+        "updatedAt": "2025-01-10T10:00:00.000Z",
+        "publishedAt": "2025-01-10T10:00:00.000Z"
+      }
+    }
+  ],
+  "siteSettings": {
+    "id": 1,
+    "attributes": {
+      "siteName": "ColaTech Solutions",
+      "tagline": "Digital infrastructure for homes and small businesses",
+      "phone": "(713) XXX-XXXX",
+      "email": "hello@colatechsolutions.com",
+      "address": "Houston, TX",
+      "businessHours": "Mon–Fri 9am–6pm CT",
+      "socialLinks": [
+        {
+          "id": 1,
+          "platform": "linkedin",
+          "url": "https://linkedin.com/company/colatech-solutions"
+        }
+      ],
+      "gtmId": null,
+      "enableMaintenance": false,
+      "maintenanceMessage": null,
+      "createdAt": "2025-01-10T10:00:00.000Z",
+      "updatedAt": "2025-01-10T10:00:00.000Z"
+    }
+  }
+}
