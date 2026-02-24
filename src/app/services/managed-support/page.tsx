@@ -114,7 +114,7 @@ export default function ManagedSupportPage() {
     },
     {
       title: 'Proactive, Not Reactive',
-      description: 'We fix issues before they break. No more "everything was fine until it wasn't"',
+      description: 'We fix issues before they break. No more "everything was fine until it wasn\'t"',
     },
     {
       title: 'Peace of Mind',
