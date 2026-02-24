@@ -114,22 +114,22 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              Digital Infrastructure for Homes & Small Businesses
+              Websites & IT for Small Businesses in Houston
             </h1>
 
             <p className="text-xl text-colatech-grey-3 leading-relaxed">
-              Websites, Wi-Fi, cameras, security, and cloud — built and managed by real network engineers.
+              Professional websites, business email, Google Business setup, and reliable hosting — all managed by local experts.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
                 <Button variant="primary" size="lg">
-                  Request a Quote
+                  Get a Quote
                 </Button>
               </Link>
-              <Link href="/packages">
+              <Link href="https://calendly.com/colatech" target="_blank" rel="noopener noreferrer">
                 <Button variant="secondary" size="lg">
-                  View Packages
+                  Book a Free Call
                 </Button>
               </Link>
             </div>

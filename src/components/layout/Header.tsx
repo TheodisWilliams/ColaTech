@@ -2,18 +2,19 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X, Sun, Moon } from 'lucide-react'
+import { Menu, X, Sun, Moon, Phone } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import Button from '@/components/ui/Button'
 import { useTheme } from '@/contexts/ThemeContext'
 import { cn } from '@/lib/utils'
+import { siteConfig } from '@/config/site'
 
 const navLinks = [
   { label: 'Services', href: '/services' },
   { label: 'Packages', href: '/packages' },
-  { label: 'Work', href: '/case-studies' },
+  { label: 'Work', href: '/work' },
   { label: 'About', href: '/about' },
-  { label: 'FAQ', href: '/faq' },
+  // { label: 'FAQ', href: '/faq' }, // Commented out - page has syntax errors
 ]
 
 export default function Header() {
@@ -72,11 +73,15 @@ export default function Header() {
               )}
             </button>
 
-            <Link href="tel:7135551234" className="text-colatech-grey-3 hover:text-white">
-              (713) 555-1234
+            <Link
+              href={`tel:${siteConfig.contact.phoneRaw}`}
+              className="text-colatech-grey-3 hover:text-white flex items-center gap-2 transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              {siteConfig.contact.phone}
             </Link>
             <Button variant="primary" size="sm">
-              <Link href="/contact">Request a Quote</Link>
+              <Link href="/contact">Get a Quote</Link>
             </Button>
           </div>
 
@@ -120,9 +125,17 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href={`tel:${siteConfig.contact.phoneRaw}`}
+                className="text-colatech-grey-3 hover:text-white flex items-center gap-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Phone className="w-4 h-4" />
+                {siteConfig.contact.phone}
+              </Link>
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button variant="primary" size="md" className="w-full">
-                  Request a Quote
+                  Get a Quote
                 </Button>
               </Link>
             </nav>

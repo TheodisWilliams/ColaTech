@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import { Phone, Mail, MapPin } from 'lucide-react'
 import Container from '@/components/ui/Container'
+import { siteConfig } from '@/config/site'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -34,8 +36,8 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-colatech-grey-3 hover:text-colatech-green text-sm">About</Link></li>
-              <li><Link href="/case-studies" className="text-colatech-grey-3 hover:text-colatech-green text-sm">Work</Link></li>
-              <li><Link href="/faq" className="text-colatech-grey-3 hover:text-colatech-green text-sm">FAQ</Link></li>
+              <li><Link href="/work" className="text-colatech-grey-3 hover:text-colatech-green text-sm">Work</Link></li>
+              {/* <li><Link href="/faq" className="text-colatech-grey-3 hover:text-colatech-green text-sm">FAQ</Link></li> */}
               <li><Link href="/contact" className="text-colatech-grey-3 hover:text-colatech-green text-sm">Contact</Link></li>
             </ul>
           </div>
@@ -43,10 +45,29 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="text-colatech-grey-3">(713) 555-1234</li>
-              <li className="text-colatech-grey-3">hello@colatechsolutions.com</li>
-              <li className="text-colatech-grey-3">Houston, TX</li>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <Link
+                  href={`tel:${siteConfig.contact.phoneRaw}`}
+                  className="text-colatech-grey-3 hover:text-colatech-green transition-colors flex items-center gap-2"
+                >
+                  <Phone className="w-4 h-4" />
+                  {siteConfig.contact.phone}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`mailto:${siteConfig.contact.email}`}
+                  className="text-colatech-grey-3 hover:text-colatech-green transition-colors flex items-center gap-2"
+                >
+                  <Mail className="w-4 h-4" />
+                  {siteConfig.contact.email}
+                </Link>
+              </li>
+              <li className="text-colatech-grey-3 flex items-center gap-2">
+                <MapPin className="w-4 h-4" />
+                {siteConfig.contact.address}
+              </li>
             </ul>
           </div>
         </div>

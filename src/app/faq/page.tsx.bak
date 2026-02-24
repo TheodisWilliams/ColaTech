@@ -1,0 +1,208 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { ArrowLeft, ChevronDown } from 'lucide-react'
+import Container from '@/components/ui/Container'
+import Card from '@/components/ui/Card'
+
+export const metadata: Metadata = {
+  title: 'FAQ',
+  description: 'Frequently asked questions about our IT services, pricing, and support.',
+}
+
+export default function FAQPage() {
+  const faqs = [
+    {
+      category: 'Services & Pricing',
+      questions: [
+        {
+          question: 'What services do you offer?',
+          answer:
+            'We offer professional website development, enterprise Wi-Fi and network infrastructure, IP security camera systems, structured cabling, firewall and VPN setup, cloud backups, and fully managed IT support. We handle both one-time projects and ongoing managed services.',
+        },
+        {
+          question: 'Do you offer payment plans?',
+          answer:
+            'Yes! For projects over $5,000, we offer milestone-based payment plans. We accept check, credit card, or bank transfer. Contact us to discuss payment options that work for your budget.',
+        },
+        {
+          question: "What's included in the quoted price?",
+          answer:
+            'All quotes include equipment, installation labor, professional cable runs, configuration, testing, and initial support. We provide detailed itemized quotes before starting any work—no surprises or hidden fees.',
+        },
+        {
+          question: 'Do you price match?',
+          answer:
+            'We focus on value over being the cheapest. Our pricing reflects enterprise-grade equipment, professional installation, and ongoing support. You get what you pay for—and our clients stay with us because the quality is worth it.',
+        },
+        {
+          question: 'Can I upgrade or expand later?',
+          answer:
+            'Absolutely! All our systems are designed to scale. You can add more Wi-Fi access points, security cameras, or upgrade to managed support as your business grows. We plan for future expansion from day one.',
+        },
+      ],
+    },
+    {
+      category: 'Installation & Timeline',
+      questions: [
+        {
+          question: 'How long does a typical project take?',
+          answer:
+            'Timeline depends on scope. A simple website takes 2-4 weeks. A basic network installation (home office or small business) takes 1-2 days. Larger deployments (multiple access points, cameras, cabling) can take 3-7 days. We provide a detailed timeline in your quote.',
+        },
+        {
+          question: 'Do I need to be on-site during installation?',
+          answer:
+            "We'll need access to your space and someone available to answer questions (network closet location, camera placement preferences, etc.). You don't need to be there the entire time—we'll coordinate with you on key decisions.",
+        },
+        {
+          question: 'Will my business operations be disrupted?',
+          answer:
+            'We minimize downtime by working outside business hours when possible. For network upgrades, we plan migrations carefully and keep your existing setup running until the new system is ready. Most clients experience zero downtime.',
+        },
+        {
+          question: 'What areas do you serve?',
+          answer:
+            'We primarily serve Houston and surrounding areas (Katy, Sugar Land, The Woodlands, Pearland, etc.). For larger projects, we can travel further. Contact us to confirm service availability in your area.',
+        },
+      ],
+    },
+    {
+      category: 'Technical & Support',
+      questions: [
+        {
+          question: 'What brands of equipment do you use?',
+          answer:
+            'We use enterprise-grade equipment: Ubiquiti UniFi for Wi-Fi and networking, Hikvision or Reolink for cameras, pfSense or Ubiquiti for firewalls. We avoid consumer-grade gear that fails quickly. All equipment comes with manufacturer warranties.',
+        },
+        {
+          question: 'Do you provide training?',
+          answer:
+            'Yes! Every installation includes training on how to use your new systems (managing Wi-Fi, viewing cameras, accessing backups, etc.). We also offer follow-up training sessions at $150/hour if needed.',
+        },
+        {
+          question: 'What kind of warranty do you offer?',
+          answer:
+            'Our labor is warrantied for 90 days. Equipment carries manufacturer warranties (typically 1-3 years). Managed support clients get extended coverage and priority service for the life of their contract.',
+        },
+        {
+          question: 'What if something breaks after installation?',
+          answer:
+            "Contact us immediately. If it's within the warranty period, we'll fix it at no charge. Outside warranty, we diagnose the issue and provide a quote for repair. Managed support clients get priority troubleshooting included.",
+        },
+        {
+          question: 'Can you work with my existing IT provider?',
+          answer:
+            'Absolutely. We collaborate with in-house IT teams and other vendors all the time. We can handle infrastructure while your team focuses on applications, or vice versa. We are team players.',
+        },
+        {
+          question: 'Do you offer remote support?',
+          answer:
+            'Yes! Most issues can be diagnosed and fixed remotely. Managed support clients get unlimited remote support. For one-time project clients, we offer remote support at $150/hour or discounted support packages.',
+        },
+      ],
+    },
+    {
+      category: 'Websites & Development',
+      questions: [
+        {
+          question: 'Can you build custom web applications?',
+          answer:
+            'Yes! We build everything from marketing websites to custom web applications with user authentication, databases, payment processing, and third-party integrations. We specialize in React, Next.js, and modern frameworks.',
+        },
+        {
+          question: 'Will I be able to update my website myself?',
+          answer:
+            'Absolutely. We build sites with content management systems (CMS) so you can update text, images, and blog posts without coding. We provide training and documentation. For complex changes, we offer hourly support.',
+        },
+        {
+          question: 'Do you provide hosting?',
+          answer:
+            'We set up professional hosting on platforms like Vercel, Netlify, or AWS. You own the hosting account, and we provide setup and configuration. Managed support clients get ongoing hosting management included.',
+        },
+        {
+          question: 'Can you redesign my existing website?',
+          answer:
+            'Yes! We offer website redesigns starting at $2,000. We can refresh the design, improve performance, add features, and migrate to modern frameworks. We will audit your current site and provide recommendations.',
+        },
+      ],
+    },
+    {
+      category: 'Security & Cameras',
+      questions: [
+        {
+          question: 'How long do cameras record for?',
+          answer:
+            'Depends on storage size and number of cameras. A typical 2TB NVR with 8 cameras records 7-14 days of continuous footage. 4TB can store 2-4 weeks. We size storage based on your needs—retail often wants 30+ days, offices are fine with 2 weeks.',
+        },
+        {
+          question: 'Can I view cameras remotely?',
+          answer:
+            'Yes! All our systems include secure remote viewing via mobile app, web browser, or desktop software. You can view live feeds and playback recorded footage from anywhere with an internet connection.',
+        },
+        {
+          question: 'Will cameras work if the internet goes down?',
+          answer:
+            'Yes. Cameras record locally to the NVR on your network—internet not required. You just will not be able to view remotely until internet is restored. Recording continues uninterrupted.',
+        },
+        {
+          question: 'Can I add cameras to an existing system?',
+          answer:
+            'Usually yes, if your NVR has available channels and PoE ports. We charge $300-$600 per camera for installation (camera + cable run + configuration). We can also upgrade your NVR if you've maxed out capacity.',
+        },
+      ],
+    },
+  ]
+
+  return (
+    <div className="py-24">
+      <Container>
+        {/* Header */}
+        <div className="mb-12">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-colatech-grey-3 hover:text-colatech-green transition-colors mb-6"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Link>
+          <h1 className="text-5xl font-bold mb-4">Frequently Asked Questions</h1>
+          <p className="text-xl text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 max-w-3xl">
+            Got questions? We have got answers. If you do not see your question here, contact us—we are happy to help.
+          </p>
+        </div>
+
+        {/* FAQ Sections */}
+        {faqs.map((section) => (
+          <section key={section.category} className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-colatech-green">
+              {section.category}
+            </h2>
+            <div className="space-y-6">
+              {section.questions.map((faq, index) => (
+                <Card key={index}>
+                  <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
+                  <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </Card>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        {/* CTA Section */}
+        <div className="mt-20 text-center bg-colatech-grey-1 dark:bg-colatech-grey-1 light:bg-gray-50 rounded-2xl p-12">
+          <h2 className="text-3xl font-bold mb-4">Still Have Questions?</h2>
+          <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-8 max-w-2xl mx-auto">
+            We are here to help. Schedule a free consultation and we will answer all your questions—no pressure, no sales pitch.
+          </p>
+          <Link href="/contact">
+            <button className="bg-colatech-green text-white px-8 py-3 rounded-lg hover:shadow-glow-green transition-all font-semibold">
+              Contact Us
+            </button>
+          </Link>
+        </div>
+      </Container>
+    </div>
+  )
+}

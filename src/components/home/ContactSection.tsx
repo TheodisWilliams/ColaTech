@@ -24,12 +24,35 @@ export default function ContactSection() {
     notes: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implement form submission logic
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
+    setSubmitting(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/quote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setSubmitted(true)
+      } else {
+        setError(data.message || 'Something went wrong. Please try again.')
+      }
+    } catch (err) {
+      setError('Failed to submit. Please call us at (713) 555-1234.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   const toggleService = (service: string) => {
@@ -173,8 +196,14 @@ export default function ContactSection() {
               />
             </div>
 
-            <Button type="submit" variant="primary" size="lg" className="w-full">
-              Request a Quote
+            {error && (
+              <div className="mb-4 p-4 bg-red-900/20 border border-red-900/50 rounded-xl text-red-400 text-sm">
+                {error}
+              </div>
+            )}
+
+            <Button type="submit" variant="primary" size="lg" className="w-full" disabled={submitting}>
+              {submitting ? 'Sending...' : 'Get a Quote'}
             </Button>
           </form>
         </div>
