@@ -152,19 +152,19 @@ export default function PackagesPage() {
   ]
 
   return (
-    <div className="py-24">
+    <div className="py-12 sm:py-16 md:py-24">
       <Container>
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6">Packages & Pricing</h1>
-          <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-xl max-w-3xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 px-4">Packages & Pricing</h1>
+          <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-4">
             Transparent pricing. No surprises. Choose the package that fits your needs,
             or we'll create a custom solution.
           </p>
         </div>
 
         {/* Main Packages */}
-        <section className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <section className="mb-12 sm:mb-16 md:mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
             {packages.slice(0, 3).map((pkg) => (
               <Card
                 key={pkg.id}
@@ -175,35 +175,35 @@ export default function PackagesPage() {
                 }
               >
                 {pkg.badge && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-colatech-green px-4 py-1 rounded-full text-xs font-semibold">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-colatech-green px-3 sm:px-4 py-0.5 sm:py-1 rounded-full text-xs font-semibold whitespace-nowrap">
                     {pkg.badge}
                   </div>
                 )}
 
-                <h2 className="text-2xl font-bold mb-2">{pkg.name}</h2>
-                <p className="text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold mb-2">{pkg.name}</h2>
+                <p className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-3 sm:mb-4">
                   {pkg.oneLiner}
                 </p>
-                <p className="text-3xl font-bold text-colatech-green mb-6">
+                <p className="text-2xl sm:text-3xl font-bold text-colatech-green mb-4 sm:mb-6">
                   {pkg.price}
                 </p>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 w-full text-left">
                   {pkg.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-colatech-green flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-colatech-green flex-shrink-0 mt-0.5" />
+                      <span className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
                         {feature}
                       </span>
                     </li>
                   ))}
                 </ul>
 
-                <p className="text-xs text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-6">
+                <p className="text-xs text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-4 sm:mb-6">
                   <strong>Ideal for:</strong> {pkg.idealFor}
                 </p>
 
-                <Link href="/contact">
+                <Link href="/contact" className="w-full">
                   <Button
                     variant={pkg.isFeatured ? 'primary' : 'secondary'}
                     size="md"
@@ -217,7 +217,7 @@ export default function PackagesPage() {
           </div>
 
           {/* Additional Packages */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {packages.slice(3).map((pkg) => (
               <Card
                 key={pkg.id}
@@ -228,35 +228,35 @@ export default function PackagesPage() {
                 }
               >
                 {pkg.badge && (
-                  <div className="inline-block bg-colatech-green px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                  <div className="inline-block bg-colatech-green px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-semibold mb-2 sm:mb-3">
                     {pkg.badge}
                   </div>
                 )}
 
-                <h2 className="text-2xl font-bold mb-2">{pkg.name}</h2>
-                <p className="text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold mb-2">{pkg.name}</h2>
+                <p className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-3 sm:mb-4">
                   {pkg.oneLiner}
                 </p>
-                <p className="text-3xl font-bold text-colatech-green mb-6">
+                <p className="text-2xl sm:text-3xl font-bold text-colatech-green mb-4 sm:mb-6">
                   {pkg.price}
                 </p>
 
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2 mb-4 sm:mb-6 w-full text-left">
                   {pkg.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-colatech-green flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+                      <Check className="w-3 h-3 sm:w-4 sm:h-4 text-colatech-green flex-shrink-0 mt-0.5" />
+                      <span className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
                         {feature}
                       </span>
                     </li>
                   ))}
                 </ul>
 
-                <p className="text-xs text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-6">
+                <p className="text-xs text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-4 sm:mb-6">
                   <strong>Ideal for:</strong> {pkg.idealFor}
                 </p>
 
-                <Link href="/contact">
+                <Link href="/contact" className="w-full">
                   <Button
                     variant={pkg.isFeatured ? 'primary' : 'secondary'}
                     size="md"
@@ -271,16 +271,16 @@ export default function PackagesPage() {
         </section>
 
         {/* Add-Ons */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">Add-Ons & Extras</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="mb-12 sm:mb-16 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center px-4">Add-Ons & Extras</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {addOns.map((addon) => (
               <Card key={addon.name} hoverable>
-                <h3 className="text-lg font-semibold mb-2">{addon.name}</h3>
-                <p className="text-xl font-bold text-colatech-green mb-2">
+                <h3 className="text-base sm:text-lg font-semibold mb-2">{addon.name}</h3>
+                <p className="text-lg sm:text-xl font-bold text-colatech-green mb-2">
                   {addon.price}
                 </p>
-                <p className="text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+                <p className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
                   {addon.description}
                 </p>
               </Card>
@@ -289,36 +289,36 @@ export default function PackagesPage() {
         </section>
 
         {/* FAQ */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">Pricing FAQ</h2>
-          <div className="max-w-3xl mx-auto space-y-6">
-            <Card>
-              <h3 className="text-xl font-semibold mb-2">Do you offer payment plans?</h3>
-              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+        <section className="mb-12 sm:mb-16 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center px-4">Pricing FAQ</h2>
+          <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6">
+            <Card className="text-left">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Do you offer payment plans?</h3>
+              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 For larger projects ($5,000+), we can discuss milestone-based payment plans.
                 We accept check, credit card, or bank transfer.
               </p>
             </Card>
 
-            <Card>
-              <h3 className="text-xl font-semibold mb-2">What's included in the quoted price?</h3>
-              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+            <Card className="text-left">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">What's included in the quoted price?</h3>
+              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 All quotes include equipment, installation labor, cable runs, configuration,
                 testing, and initial support. We provide detailed quotes before starting any work.
               </p>
             </Card>
 
-            <Card>
-              <h3 className="text-xl font-semibold mb-2">Can I upgrade later?</h3>
-              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+            <Card className="text-left">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Can I upgrade later?</h3>
+              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 Absolutely! Our systems are designed to scale. Add more access points, cameras,
                 or services as your business grows.
               </p>
             </Card>
 
-            <Card>
-              <h3 className="text-xl font-semibold mb-2">Do you price match?</h3>
-              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+            <Card className="text-left">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Do you price match?</h3>
+              <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 We focus on value over being the cheapest. Our pricing reflects enterprise-grade
                 equipment, professional installation, and ongoing support. You get what you pay for.
               </p>
@@ -327,12 +327,12 @@ export default function PackagesPage() {
         </section>
 
         {/* CTA */}
-        <div className="text-center bg-colatech-grey-1 dark:bg-colatech-grey-1 light:bg-gray-50 rounded-2xl p-12">
-          <h2 className="text-3xl font-bold mb-4">Not Sure Which Package?</h2>
-          <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-8 max-w-2xl mx-auto">
+        <div className="text-center bg-colatech-grey-1 dark:bg-colatech-grey-1 light:bg-gray-50 rounded-2xl p-6 sm:p-8 md:p-12">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 px-4">Not Sure Which Package?</h2>
+          <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base px-4">
             Schedule a free consultation. We'll assess your needs and recommend the best solution.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
             <Link href="/contact">
               <Button variant="primary" size="lg" icon={<ArrowRight className="w-5 h-5" />}>
                 Schedule Consultation
