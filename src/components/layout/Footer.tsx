@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-colatech-black border-t border-colatech-grey-2 py-8 sm:py-10 md:py-12">
       <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8 text-center sm:text-left">
           {/* Brand */}
           <div className="sm:col-span-2 md:col-span-1">
             <div className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
@@ -24,10 +24,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Services</h3>
             <ul className="space-y-1.5 sm:space-y-2">
-              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">Websites</Link></li>
-              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">Networking</Link></li>
-              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">Security</Link></li>
-              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">Managed Support</Link></li>
+              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">Websites</Link></li>
+              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">Networking</Link></li>
+              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">Security</Link></li>
+              <li><Link href="/services" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">Managed Support</Link></li>
             </ul>
           </div>
 
@@ -35,10 +35,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Company</h3>
             <ul className="space-y-1.5 sm:space-y-2">
-              <li><Link href="/about" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">About</Link></li>
-              <li><Link href="/work" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">Work</Link></li>
-              {/* <li><Link href="/faq" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">FAQ</Link></li> */}
-              <li><Link href="/contact" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm">Contact</Link></li>
+              <li><Link href="/about" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">About</Link></li>
+              <li><Link href="/work" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">Work</Link></li>
+              {/* <li><Link href="/faq" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">FAQ</Link></li> */}
+              <li><Link href="/contact" className="text-colatech-grey-3 hover:text-colatech-green text-xs sm:text-sm block">Contact</Link></li>
             </ul>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <Link
                   href={`tel:${siteConfig.contact.phoneRaw}`}
-                  className="text-colatech-grey-3 hover:text-colatech-green transition-colors flex items-center gap-2"
+                  className="text-colatech-grey-3 hover:text-colatech-green transition-colors flex items-center gap-2 justify-center sm:justify-start"
                 >
                   <Phone className="w-4 h-4" />
                   {siteConfig.contact.phone}
@@ -58,13 +58,13 @@ export default function Footer() {
               <li>
                 <Link
                   href={`mailto:${siteConfig.contact.email}`}
-                  className="text-colatech-grey-3 hover:text-colatech-green transition-colors flex items-center gap-2"
+                  className="text-colatech-grey-3 hover:text-colatech-green transition-colors flex items-center gap-2 justify-center sm:justify-start"
                 >
                   <Mail className="w-4 h-4" />
                   {siteConfig.contact.email}
                 </Link>
               </li>
-              <li className="text-colatech-grey-3 flex items-center gap-2">
+              <li className="text-colatech-grey-3 flex items-center gap-2 justify-center sm:justify-start">
                 <MapPin className="w-4 h-4" />
                 {siteConfig.contact.address}
               </li>

@@ -188,11 +188,11 @@ export default function PackagesPage() {
                   {pkg.price}
                 </p>
 
-                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 w-full text-left">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 w-full">
                   {pkg.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-colatech-green flex-shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+                    <li key={feature} className="flex items-center gap-2 justify-center sm:justify-start">
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-colatech-green flex-shrink-0" />
+                      <span className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-left">
                         {feature}
                       </span>
                     </li>
@@ -241,11 +241,11 @@ export default function PackagesPage() {
                   {pkg.price}
                 </p>
 
-                <ul className="space-y-2 mb-4 sm:mb-6 w-full text-left">
+                <ul className="space-y-2 mb-4 sm:mb-6 w-full">
                   {pkg.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-2">
-                      <Check className="w-3 h-3 sm:w-4 sm:h-4 text-colatech-green flex-shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+                    <li key={feature} className="flex items-center gap-2 justify-center sm:justify-start">
+                      <Check className="w-3 h-3 sm:w-4 sm:h-4 text-colatech-green flex-shrink-0" />
+                      <span className="text-xs sm:text-sm text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-left">
                         {feature}
                       </span>
                     </li>
@@ -292,7 +292,7 @@ export default function PackagesPage() {
         <section className="mb-12 sm:mb-16 md:mb-20">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center px-4">Pricing FAQ</h2>
           <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6">
-            <Card className="text-left">
+            <Card>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Do you offer payment plans?</h3>
               <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 For larger projects ($5,000+), we can discuss milestone-based payment plans.
@@ -300,7 +300,7 @@ export default function PackagesPage() {
               </p>
             </Card>
 
-            <Card className="text-left">
+            <Card>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">What's included in the quoted price?</h3>
               <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 All quotes include equipment, installation labor, cable runs, configuration,
@@ -308,7 +308,7 @@ export default function PackagesPage() {
               </p>
             </Card>
 
-            <Card className="text-left">
+            <Card>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Can I upgrade later?</h3>
               <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 Absolutely! Our systems are designed to scale. Add more access points, cameras,
@@ -316,7 +316,7 @@ export default function PackagesPage() {
               </p>
             </Card>
 
-            <Card className="text-left">
+            <Card>
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Do you price match?</h3>
               <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base">
                 We focus on value over being the cheapest. Our pricing reflects enterprise-grade

@@ -85,16 +85,16 @@ export default async function PricingSection() {
                   </div>
                 )}
 
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 text-center">{pkg.attributes.name}</h3>
-                <p className="text-2xl sm:text-3xl font-bold text-colatech-green mb-4 sm:mb-6 text-center">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">{pkg.attributes.name}</h3>
+                <p className="text-2xl sm:text-3xl font-bold text-colatech-green mb-4 sm:mb-6">
                   {pkg.attributes.priceRange}
                 </p>
 
-                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 w-full text-left">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 w-full">
                   {features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-colatech-green flex-shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-colatech-grey-3">{feature}</span>
+                    <li key={idx} className="flex items-center gap-2 justify-center sm:justify-start">
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-colatech-green flex-shrink-0" />
+                      <span className="text-xs sm:text-sm text-colatech-grey-3 text-left">{feature}</span>
                     </li>
                   ))}
                 </ul>
