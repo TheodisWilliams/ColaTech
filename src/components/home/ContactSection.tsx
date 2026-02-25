@@ -66,16 +66,16 @@ export default function ContactSection() {
 
   if (submitted) {
     return (
-      <section className="py-24 bg-colatech-black">
+      <section className="py-12 sm:py-16 md:py-24 bg-colatech-black">
         <Container>
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="w-16 h-16 bg-colatech-green rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="max-w-2xl mx-auto text-center px-4">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-colatech-green rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+              <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h2 className="text-3xl font-bold mb-4">Request Received!</h2>
-            <p className="text-colatech-grey-3 text-lg">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Request Received!</h2>
+            <p className="text-colatech-grey-3 text-base sm:text-lg">
               We'll contact you within 24 hours to discuss your project.
             </p>
           </div>
@@ -85,17 +85,17 @@ export default function ContactSection() {
   }
 
   return (
-    <section className="py-24 bg-colatech-black">
+    <section className="py-12 sm:py-16 md:py-24 bg-colatech-black">
       <Container>
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Ready to Upgrade Your Infrastructure?</h2>
-          <p className="text-colatech-grey-3 text-lg">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-4">Ready to Upgrade Your Infrastructure?</h2>
+          <p className="text-colatech-grey-3 text-sm sm:text-base md:text-lg px-4">
             Get a custom quote in 24 hours or book a 15-minute consult.
           </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <form onSubmit={handleSubmit} className="bg-colatech-grey-1 border border-colatech-grey-2 rounded-2xl p-8">
+          <form onSubmit={handleSubmit} className="bg-colatech-grey-1 border border-colatech-grey-2 rounded-2xl p-4 sm:p-6 md:p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">

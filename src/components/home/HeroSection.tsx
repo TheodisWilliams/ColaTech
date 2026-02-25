@@ -113,11 +113,11 @@ export default function HeroSection() {
               </span>
             </div>
 
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
               Websites & IT for Small Businesses in Houston
             </h1>
 
-            <p className="text-xl text-colatech-grey-3 leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-colatech-grey-3 leading-relaxed">
               Professional websites, business email, Google Business setup, and reliable hosting — all managed by local experts.
             </p>
 
@@ -136,9 +136,9 @@ export default function HeroSection() {
           </div>
 
           {/* Right: Dashboard Visual */}
-          <div className="bg-colatech-grey-1/50 border border-colatech-grey-2 rounded-3xl p-6 backdrop-blur">
+          <div className="bg-colatech-grey-1/50 border border-colatech-grey-2 rounded-3xl p-4 sm:p-6 backdrop-blur">
             {/* Tabs */}
-            <div className="flex gap-2 mb-6 border-b border-colatech-grey-2">
+            <div className="flex gap-1 sm:gap-2 mb-6 border-b border-colatech-grey-2 overflow-x-auto">
               {dashboardTabs.map((tab) => {
                 const Icon = tab.icon
                 return (
@@ -146,14 +146,14 @@ export default function HeroSection() {
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id as keyof typeof dashboardContent)}
                     className={cn(
-                      'flex items-center gap-2 px-4 py-2 text-sm transition-colors relative',
+                      'flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 text-xs sm:text-sm transition-colors relative whitespace-nowrap flex-shrink-0',
                       activeTab === tab.id
                         ? 'text-white'
                         : 'text-colatech-grey-3 hover:text-white'
                     )}
                   >
-                    <Icon className="w-4 h-4" />
-                    {tab.label}
+                    <Icon className="w-3 h-3 sm:w-4 sm:h-4" />
+                    <span className="hidden sm:inline">{tab.label}</span>
                     {activeTab === tab.id && (
                       <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-colatech-green" />
                     )}

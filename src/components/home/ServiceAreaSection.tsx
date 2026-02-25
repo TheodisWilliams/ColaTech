@@ -5,21 +5,21 @@ import { siteConfig } from '@/config/site'
 
 export default function ServiceAreaSection() {
   return (
-    <section className="py-24 bg-colatech-grey-1 dark:bg-colatech-grey-1 light:bg-gray-50">
+    <section className="py-12 sm:py-16 md:py-24 bg-colatech-grey-1 dark:bg-colatech-grey-1 light:bg-gray-50">
       <Container>
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-colatech-green/10 rounded-2xl mb-6">
-            <MapPin className="w-8 h-8 text-colatech-green" />
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-colatech-green/10 rounded-2xl mb-4 sm:mb-6">
+            <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-colatech-green" />
           </div>
-          <h2 className="text-4xl font-bold mb-4">Proudly Serving the Greater Houston Area</h2>
-          <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-lg max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-4">Proudly Serving the Greater Houston Area</h2>
+          <p className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">
             We're a local Houston business providing IT services to small businesses across the metro area.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
           {/* Map Placeholder */}
-          <Card className="h-96 relative overflow-hidden">
+          <Card className="h-64 sm:h-80 md:h-96 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-colatech-green/5 to-colatech-grey-2/50 flex items-center justify-center">
               {/* Embedded Google Map - Replace the src with your actual Google Maps embed URL */}
               <iframe
@@ -37,14 +37,14 @@ export default function ServiceAreaSection() {
 
           {/* Service Areas List */}
           <div>
-            <h3 className="text-2xl font-bold mb-6">Areas We Serve</h3>
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Areas We Serve</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
               {siteConfig.serviceArea.cities.map((city) => (
                 <div key={city} className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-colatech-green/10 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-colatech-green" />
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-colatech-green/10 flex items-center justify-center flex-shrink-0">
+                    <Check className="w-3 h-3 sm:w-4 sm:h-4 text-colatech-green" />
                   </div>
-                  <span className="text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
+                  <span className="text-sm sm:text-base text-colatech-grey-3 dark:text-colatech-grey-3 light:text-gray-600">
                     {city}
                   </span>
                 </div>

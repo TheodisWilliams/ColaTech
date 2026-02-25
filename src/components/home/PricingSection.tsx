@@ -55,17 +55,17 @@ export default async function PricingSection() {
   const displayPackages = packages.length > 0 ? packages : fallbackPackages
 
   return (
-    <section className="py-24 bg-colatech-grey-1/30">
+    <section className="py-12 sm:py-16 md:py-24 bg-colatech-grey-1/30">
       <Container>
-        <div className="text-center mb-16">
-          <div className="text-sm uppercase tracking-wider text-colatech-green mb-3">Packages</div>
-          <h2 className="text-4xl font-bold mb-4">Choose Your Starting Point</h2>
-          <p className="text-colatech-grey-3 text-lg max-w-2xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <div className="text-xs sm:text-sm uppercase tracking-wider text-colatech-green mb-2 sm:mb-3">Packages</div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-4">Choose Your Starting Point</h2>
+          <p className="text-colatech-grey-3 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">
             Transparent pricing. No surprises. Scale as you grow.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8">
           {displayPackages.map((pkg, index) => {
             const features = pkg.attributes.bullets.split('\n')
             const isFeatured = index === 1 // Middle package
@@ -80,21 +80,21 @@ export default async function PricingSection() {
                 }
               >
                 {isFeatured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-colatech-green px-4 py-1 rounded-full text-xs font-semibold">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-colatech-green px-3 sm:px-4 py-0.5 sm:py-1 rounded-full text-xs font-semibold">
                     Popular
                   </div>
                 )}
 
-                <h3 className="text-2xl font-bold mb-2">{pkg.attributes.name}</h3>
-                <p className="text-3xl font-bold text-colatech-green mb-6">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">{pkg.attributes.name}</h3>
+                <p className="text-2xl sm:text-3xl font-bold text-colatech-green mb-4 sm:mb-6">
                   {pkg.attributes.priceRange}
                 </p>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                   {features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-colatech-green flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-colatech-grey-3">{feature}</span>
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-colatech-green flex-shrink-0 mt-0.5" />
+                      <span className="text-xs sm:text-sm text-colatech-grey-3">{feature}</span>
                     </li>
                   ))}
                 </ul>

@@ -57,19 +57,19 @@ export default function ServicesGrid() {
   ]
 
   return (
-    <section className="py-24 bg-colatech-black">
+    <section className="py-12 sm:py-16 md:py-24 bg-colatech-black">
       <Container>
         {/* Website Services Section */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <div className="text-sm uppercase tracking-wider text-colatech-green mb-3">Website Services</div>
-            <h2 className="text-4xl font-bold mb-4">Get Your Business Online</h2>
-            <p className="text-colatech-grey-3 text-lg max-w-2xl mx-auto">
+        <div className="mb-12 sm:mb-16 md:mb-20">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <div className="text-xs sm:text-sm uppercase tracking-wider text-colatech-green mb-2 sm:mb-3">Website Services</div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-4">Get Your Business Online</h2>
+            <p className="text-colatech-grey-3 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">
               Professional websites, email setup, and ongoing support — all in one place.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {websiteServices.map((service) => {
               const Icon = iconMap[service.icon] || Globe
               return (
@@ -80,16 +80,16 @@ export default function ServicesGrid() {
                     className={`h-full relative ${service.featured ? 'border-2 border-colatech-green' : ''}`}
                   >
                     {service.badge && (
-                      <div className={`absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold ${
+                      <div className={`absolute -top-3 left-1/2 -translate-x-1/2 px-3 sm:px-4 py-0.5 sm:py-1 rounded-full text-xs font-semibold whitespace-nowrap ${
                         service.featured ? 'bg-colatech-green text-white' : 'bg-colatech-grey-2 text-colatech-grey-3'
                       }`}>
                         {service.badge}
                       </div>
                     )}
-                    <Icon className="w-12 h-12 text-colatech-green mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                    <p className="text-2xl font-bold text-colatech-green mb-3">{service.price}</p>
-                    <p className="text-colatech-grey-3 text-sm">{service.shortDescription}</p>
+                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-colatech-green mb-3 sm:mb-4" />
+                    <h3 className="text-lg sm:text-xl font-semibold mb-2">{service.title}</h3>
+                    <p className="text-xl sm:text-2xl font-bold text-colatech-green mb-2 sm:mb-3">{service.price}</p>
+                    <p className="text-colatech-grey-3 text-xs sm:text-sm">{service.shortDescription}</p>
                   </Card>
                 </Link>
               )
@@ -99,23 +99,23 @@ export default function ServicesGrid() {
 
         {/* Low Voltage / IT Services Section */}
         <div>
-          <div className="text-center mb-12">
-            <div className="text-sm uppercase tracking-wider text-colatech-green mb-3">Low Voltage & IT Services</div>
-            <h2 className="text-4xl font-bold mb-4">Network Infrastructure & Security</h2>
-            <p className="text-colatech-grey-3 text-lg max-w-2xl mx-auto">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <div className="text-xs sm:text-sm uppercase tracking-wider text-colatech-green mb-2 sm:mb-3">Low Voltage & IT Services</div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-4">Network Infrastructure & Security</h2>
+            <p className="text-colatech-grey-3 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-4">
               Enterprise-grade networking, security cameras, and IT support for your business.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
             {lowVoltageServices.map((service) => {
               const Icon = iconMap[service.icon] || Wifi
               return (
                 <Link key={service.id} href={`/services/${service.slug}`}>
                   <Card hoverable clickable className="h-full">
-                    <Icon className="w-10 h-10 text-colatech-green mb-3" />
-                    <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                    <p className="text-colatech-grey-3 text-sm">{service.shortDescription}</p>
+                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 text-colatech-green mb-2 sm:mb-3" />
+                    <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">{service.title}</h3>
+                    <p className="text-colatech-grey-3 text-xs sm:text-sm">{service.shortDescription}</p>
                   </Card>
                 </Link>
               )
