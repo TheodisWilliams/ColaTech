@@ -4,6 +4,7 @@ import { Globe, Wifi, Camera, Shield, Cloud, Server, Cable, Wrench } from 'lucid
 import Container from '@/components/ui/Container'
 import Card from '@/components/ui/Card'
 import { getAllServices } from '@/lib/strapi'
+import type { Service } from '@/types'
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -54,7 +55,7 @@ export default async function ServicesPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {displayServices.map((service) => {
+          {displayServices.map((service: Service) => {
             const Icon = iconMap[service.attributes.icon] || Globe
             return (
               <Link key={service.id} href={`/services/${service.attributes.slug}`}>
